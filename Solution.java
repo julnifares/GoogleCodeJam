@@ -27,13 +27,11 @@ public class Solution {
  
 
 static boolean czyJest(int liczba, int jaka){
-	int a = liczba;
-	int b= jaka;
-	Integer A = a;
-	Integer B = b;
+	Integer A = liczba;
+	Integer B = jaka;
 
-	String str=A.toString();
-	String jaka1=B.toString();
+	String str = A.toString();
+	String jaka1 = B.toString();
 
 	return str.indexOf(jaka1)!=-1;
 }
@@ -42,9 +40,10 @@ static class Tablica{
 	boolean tab[] = new boolean[10];
 
 	void sprawdz(int numer){
-		for (int i=0; i<10; i++) {
-		if (czyJest(numer, i))
-		tab[i] = true;
+		for (int i = 0; i<10; i++) {
+			
+			if (czyJest(numer, i))
+				tab[i] = true;
 		}
 	}
 
