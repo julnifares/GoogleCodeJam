@@ -1,2 +1,3 @@
 # googleJamCode
-2016
+
+Solutions to google code jam problems.
